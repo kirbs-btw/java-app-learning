@@ -3,6 +3,12 @@ import javax.swing.SwingUtilities;
 
 public class Main {
     public static void main(String[] args) {
-        Frame frame = new Frame();
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                Frame frame = new Frame();
+            }
+        });
+
     }
 }
