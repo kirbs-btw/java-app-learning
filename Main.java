@@ -15,15 +15,9 @@ public class Main {
                 panel.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 10));
                 frame.add(panel);
 
-                JButton button = new JButton("button");
-                button.setContentAreaFilled(false);
-                button.setBorder(new EmptyBorder(8, 8, 8, 8));
+                Button_custom_main button = new Button_custom_main();
 
-
-                panel.add(button);
-
-
-
+                panel.add(button.button);
             }
         });
     }
