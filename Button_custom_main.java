@@ -9,15 +9,8 @@ public class Button_custom_main{
         button = new JButton("ello");
         button.setContentAreaFilled(false);
         button.setBorder(new EmptyBorder(8, 8, 8, 8));
-        button.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                action();
-            }
-        });
+
     }
 
-    public void action(){
-        System.out.println("ello sir");
-    }
+
 }
