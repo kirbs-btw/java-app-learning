@@ -9,7 +9,6 @@ import java.awt.event.ActionListener;
 
 public class Main {
 
-
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -19,6 +18,9 @@ public class Main {
 
                 panel.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 10));
                 frame.add(panel);
+
+                JLabel label = new JLabel("Hello Sir");
+                panel.add(label);
 
                 Button_custom_main button = new Button_custom_main();
                 panel.add(button.button);
