@@ -5,12 +5,10 @@ import java.awt.event.ActionEvent;
 
 public class Button_custom_main{
     public JButton button;
-    public Button_custom_main(){
-        button = new JButton("ello");
-        button.setContentAreaFilled(false);
-        button.setBorder(new EmptyBorder(8, 8, 8, 8));
+    public Button_custom_main(String name){
+        button = new JButton(name);
+        // button.setContentAreaFilled(false);
+        button.setBorder(new EmptyBorder(16, 25, 16, 25));
 
     }
-
-
 }
