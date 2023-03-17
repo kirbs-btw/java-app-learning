@@ -16,10 +16,10 @@ public class Main {
                 Frame frame = new Frame();
                 JPanel panel = new JPanel();
                 panel.setBackground(Color.cyan);
-
+                JPanel centerContainer = new JPanel();
 
                 // panel.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 10));
-                panel.setLayout(new BorderLayout(5, 5));
+                panel.setLayout(new BorderLayout(15, 15));
                 frame.add(panel);
 
                 JLabel label = new JLabel("Hello Sir");
@@ -29,8 +29,18 @@ public class Main {
                 Button_custom_main button = new Button_custom_main("Press me!");
                 panel.add(button.button, BorderLayout.SOUTH);
 
-                Button_custom_main buttontwo = new Button_custom_main("Press meeee!!");
-                panel.add(buttontwo.button, BorderLayout.CENTER);
+                centerContainer.setBackground(Color.GREEN);
+                panel.add(centerContainer, BorderLayout.CENTER);
+
+                Button_custom_main buttontwo = new Button_custom_main("2!!");
+                centerContainer.add(buttontwo.button);
+
+                Button_custom_main buttonthree = new Button_custom_main("3!");
+                centerContainer.add(buttonthree.button);
+
+                Button_custom_main buttonfour = new Button_custom_main("4!!");
+                centerContainer.add(buttonfour.button);
+
 
                 JTextField field = new JTextField(25);
                 panel.add(field, BorderLayout.NORTH);
